@@ -8,6 +8,7 @@ import Traditional from './pages/Traditional';
 import Tips from './pages/Tips';
 import Community from './pages/Community';
 import Research from './pages/Research';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/tips" element={<Tips />} />
           <Route path="/community" element={<Community />} />
           <Route path="/research" element={<Research />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>
